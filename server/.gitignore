@@ -1,0 +1,49 @@
+# Node.js modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# IDE or Editor specific files
+.vscode/
+.idea/
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Package-lock
+package-lock.json
+
+# Docker
+docker-compose.override.yml
+Dockerfile
+
+# Logs directory
+logs/
+*.log
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db

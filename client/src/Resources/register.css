@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #17153B, #C8ACD6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Add background blur effect */
+.outer-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.inner-box {
+    width: 90%; 
+    max-width: 400px; 
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    z-index: 2;
+    opacity: 95%;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+}
+.inner-box:hover {
+    border: 2px solid #e5dee8;
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.signup-body {
+    margin: 20px 0px;
+}
+
+.signup-body p {
+    margin: 25px 0;
+}
+
+.signup-body p label {
+    display: block;
+    color: #ffffff;
+    font-weight: 200px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.signup-body p input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fdf9f9;
+    font-weight: 600;
+    outline:none;
+}
+.signup-body p input:hover {
+    border: 2px solid  #e5dee8;
+}
+
+.password-field {
+    position: relative;
+    margin: 20px 0;
+}
+
+.password-field input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.1); /* Match with other input fields */
+    color: #fdf9f9;
+    font-weight: 600;
+}
+
+.password-field i {
+    position: absolute;
+    top: 50%; /* Adjust to align with the input field */
+    right: 10px;
+    transform: translateY(10%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button-box {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-box:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter on hover */
+}
+
+.signup-footer p {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.signup-footer p a {
+    /* color: rgb(210, 18, 18); */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-footer p a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.singin-f:hover {
+    color: #f7f4f4;
+    text-decoration: underline;
+}
+
+.button-box:hover {
+    background-color: #bcabc4;
+}
+
+@media (max-width: 768px) {
+    .inner-box {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .signup-header h1 {
+        font-size: 2rem;
+    }
+
+    .signup-body p input {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .button-box {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .inner-box {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .signup-header h1 {
+        font-size: 1rem;
+    }
+
+    .signup-body p input {
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .button-box {
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+

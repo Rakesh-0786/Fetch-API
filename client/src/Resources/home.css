@@ -1,0 +1,114 @@
+.api-tester {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .method-url {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  #method, #url, #send-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #url {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #send-btn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(29, 157, 225);
+    color: white;
+    border: none;
+    border-radius: 3px solid;
+    width: auto;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .tab {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .tab:hover {
+    border-bottom: 2px solid rgb(29, 157, 225);
+  }
+  
+  .response-box {
+    position: relative; /* Make this container the reference for absolute positioning */
+    padding: 10px;
+  }
+  
+  .response-box textarea {
+    height: 150px;
+    width: 100%;
+  }
+  
+  .status-code {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: green;
+
+  }
+  
+  .status-success {
+    color: green;
+  }
+  
+  .status-error {
+    color: red;
+  }
+  
+  
+  /* Media Queries */
+  @media (min-width: 600px) {
+    .method-url {
+      flex-direction: row;
+    }
+  
+    #method, #url, #send-btn {
+      width: auto;
+      margin-bottom: 0;
+    }
+  
+    #method {
+      flex: 0 0 100px;
+    }
+  
+    #url {
+      flex: 1;
+    }
+  
+    #send-btn {
+      flex: 0 0 100px;
+    }
+  
+    .tab {
+      flex: none;
+    }
+  }
+  
